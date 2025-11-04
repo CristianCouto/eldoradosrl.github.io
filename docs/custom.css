@@ -1,7 +1,8 @@
-/* ===== Variables de color (editá acá si querés afinar) ===== */
+/* ===== Variables de color ===== */
 :root{
-  --naranja-elec: rgba(255, 106, 0, 0.80);  /* #FF2A00 con transparencia */
-  --azul-elec: #0074C7;                    /* azul eléctrico de tu muestra */
+  --naranja-elec: rgba(255, 42, 0, 0.55);  /* Naranja eléctrico translúcido */
+  --azul-titulo: #2400FF;                 /* Azul eléctrico para títulos principales */
+  --azul-links: #1900CC;                  /* Azul profundo para subtítulos/enlaces */
   --blanco: #FFFFFF;
 }
 
@@ -15,7 +16,7 @@ body{
   padding: 0;
 }
 
-/* ===== Contenedor central (naranja vivo transparente) ===== */
+/* ===== Contenedor central ===== */
 .markdown-section{
   background: var(--naranja-elec);
   backdrop-filter: blur(14px);
@@ -27,10 +28,10 @@ body{
   color: var(--blanco);
 }
 
-/* ===== Título principal en AZUL ELÉCTRICO ===== */
+/* ===== Título principal (H1) ===== */
 .markdown-section h1:first-of-type,
 .markdown-section h1{
-  color: var(--azul-elec) !important;
+  color: var(--azul-titulo) !important;
   font-weight: 900;
   font-size: 38px;
   letter-spacing: 1px;
@@ -38,11 +39,11 @@ body{
   margin-bottom: 26px;
 }
 
-/* ===== Resto de títulos en blanco fuerte ===== */
+/* ===== Subtítulos (H2, H3, H4) ===== */
 .markdown-section h2,
 .markdown-section h3,
 .markdown-section h4{
-  color: var(--blanco);
+  color: var(--azul-links) !important;
   font-weight: 800;
   margin: 18px 0 12px;
 }
@@ -57,23 +58,26 @@ body{
 }
 
 /* ===== Enlaces ===== */
-.markdown-section a{
-  color: var(--blanco);
-  font-weight: 800;
+.markdown-section a,
+.markdown-section a:visited{
+  color: var(--azul-links) !important;
+  font-weight: 700;
   text-decoration: underline;
 }
-.markdown-section a:hover{ color: #000; }
+.markdown-section a:hover{
+  color: var(--blanco) !important;
+}
 
-/* ===== Sidebar (sin cambios visuales por ahora) ===== */
+/* ===== Sidebar ===== */
 .sidebar{
   background: rgba(255,255,255,0.90) !important;
   backdrop-filter: blur(4px);
   border-right: 1px solid rgba(0,0,0,0.18);
 }
 
-/* Nombre del proyecto en el sidebar en AZUL ELÉCTRICO también */
+/* ===== Nombre del proyecto en sidebar ===== */
 .sidebar .app-name,
 .sidebar .app-name-link{
-  color: var(--azul-elec) !important;
+  color: var(--azul-links) !important;
   font-weight: 800 !important;
 }
