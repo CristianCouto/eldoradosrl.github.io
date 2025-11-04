@@ -1,6 +1,5 @@
 /* ===============================
-   FONDO GENERAL
-   (La imagen la agregamos después)
+   FONDO GENERAL (Imagen se agrega después)
    =============================== */
 body {
   background-size: cover;
@@ -12,35 +11,32 @@ body {
 }
 
 /* ===============================
-   CONTENEDOR CENTRAL (NARANJA ACERO)
+   CONTENEDOR CENTRAL (NARANJA VIVO TRANSPARENTE)
    =============================== */
 .markdown-section {
-  background: rgba(255, 60, 0, 0.55); /* Naranja fuego REAL + transparencia equilibrada */
+  background: rgba(255, 94, 0, 0.55); /* Naranja vivo eléctrico */
   backdrop-filter: blur(14px);
   padding: 32px 42px;
   border-radius: 28px;
   margin: 50px auto;
   max-width: 1150px;
-  color: #EDEDED; /* Blanco mate */
-  font-weight: 700;
-  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.55);
-  line-height: 1.7;
+  box-shadow: 0 8px 42px rgba(0, 0, 0, 0.50);
+  color: #F5F5F5;
 }
 
 /* ===============================
-   TÍTULO PRINCIPAL (CHILLÓN)
+   TÍTULO PRINCIPAL
    =============================== */
 .markdown-section h1:first-of-type {
-  color: #0074C7 !important; /* AZUL fuerte mazizo */
+  color: #005CFF !important; /* Azul eléctrico */
   font-weight: 900;
-  font-size: 36px;
-  text-transform: uppercase;
+  font-size: 38px;
   letter-spacing: 1px;
   margin-bottom: 24px;
 }
 
 /* ===============================
-   RESTO DE TÍTULOS (ALTO CONTRASTE)
+   TÍTULOS SECUNDARIOS
    =============================== */
 .markdown-section h2,
 .markdown-section h3,
@@ -52,18 +48,19 @@ body {
 }
 
 /* ===============================
-   TEXTO PRINCIPAL EN BLANCO MATE NEGRITA
+   TEXTO GENERAL
    =============================== */
 .markdown-section p,
-.markdown-section li {
-  color: #F1F1F1; /* Blanco mate suave */
-  font-weight: 700;
-  font-size: 17px;
+.markdown-section li,
+.markdown-section table {
+  color: #F5F5F5;
+  font-weight: 600;
+  font-size: 16px;
   line-height: 1.65;
 }
 
 /* ===============================
-   LINKS
+   ENLACES
    =============================== */
 .markdown-section a {
   color: #FFFFFF;
@@ -75,12 +72,11 @@ body {
 }
 
 /* ===============================
-   SIDEBAR (SIN TOCAR POR AHORA)
+   SIDEBAR (SIN CAMBIOS AÚN)
    =============================== */
 .sidebar {
   background: rgba(255, 255, 255, 0.85) !important;
   backdrop-filter: blur(4px);
   border-right: 1px solid rgba(0,0,0,0.15);
-
-  border: 4px solid red !important;
 }
+
