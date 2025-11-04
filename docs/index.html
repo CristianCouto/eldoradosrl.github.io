@@ -55,13 +55,26 @@
   <div id="app"></div>
 
   <script>
-    window.$docsify = {
-      name: 'Portal de Soporte Interno - El Dorado SRL',
-      loadSidebar: '_sidebar.md',          // <— Sidebar dentro de /docs
-      subMaxLevel: 3,
-      auto2top: true,
-      homepage: 'README.md',               // <— Home en /docs
-      search: 'auto'
+  window.$docsify = {
+    name: 'Portal de Soporte Interno - El Dorado SRL',
+
+    homepage: 'README.md',
+    loadSidebar: '_sidebar.md',
+
+    alias: {
+      '/guia-usuario': 'guia-usuario.md',
+      '/instalacion': 'instalacion.md',
+      '/administrador': 'administrador.md',
+      '/mantenimiento': 'mantenimiento.md',
+      '/preguntas-frecuentes': 'preguntas-frecuentes.md',
+      '.*?/README.md': 'README.md'
+    },
+
+    subMaxLevel: 3,
+    auto2top: true
+  }
+</script>
+
     }
   </script>
 
