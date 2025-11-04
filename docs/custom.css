@@ -2,7 +2,7 @@
 :root{
   --naranja-elec: rgba(255, 106, 0, 0.80);  /* Naranja original: OK */
   --azul-titulo: #0634ff;                  /* Azul eléctrico (H1) */
-  --azul-subtitulo: #0634ff;               /* Azul suave (H2, H3, H4) */
+  --azul-subtitulo: #062fff;               /* Azul suave (H2, H3, H4) */
   --blanco: #FFFFFF;
 }
 
