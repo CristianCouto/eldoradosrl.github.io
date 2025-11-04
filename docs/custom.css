@@ -92,13 +92,25 @@ table td, table th {
 }
 .markdown-section a:hover{
   color: var(--naranja);
-}
-
 /* ===== SIDEBAR ===== */
 .sidebar{
-  background: rgba(255,255,255,0.92) !important;
+  background: rgba(255,255,255,0.85) !important;
   backdrop-filter: blur(6px);
   border-right: 1px solid rgba(0,0,0,0.12);
+  position: relative;   /* <-- necesario para el overlay */
+  overflow: hidden;     /* <-- evita que la textura se salga */
+}
+
+/* Fondo texturado corporativo */
+.sidebar::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../imagenes/fondo-textura.png");
+  background-size: cover;
+  background-position: center left;
+  opacity: 0.22;        /* Sutil — ajustar entre .12 y .35 */
+  z-index: -1;          /* Mantiene todo legible */
 }
 
 /* Título sidebar */
