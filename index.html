@@ -4,6 +4,62 @@
   <meta charset="UTF-8" />
   <title>Asistente Virtual El Dorado</title>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
+  <style>
+  body {
+    background: linear-gradient(135deg, #ffffff, #E5E5E5);
+    font-family: Arial, sans-serif;
+  }
+
+  /* Contenedor principal del sitio */
+  #app {
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+  }
+
+  /* Encabezados */
+  h1, h2, h3, h4 {
+    color: #0074C7;
+  }
+
+  /* Enlaces */
+  a {
+    color: #0074C7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #F28C28;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    background: rgba(255,255,255,0.7) !important;
+    backdrop-filter: blur(4px);
+    border-right: 1px solid rgba(0,0,0,0.1);
+  }
+
+  /* Botones */
+  .docsify-pagination-container a,
+  .markdown-section button,
+  .markdown-section .btn {
+    background: #F28C28;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .docsify-pagination-container a:hover,
+  .markdown-section button:hover,
+  .markdown-section .btn:hover {
+    background: #0074C7;
+  }
+</style>
+
 </head>
 <body>
   <div id="app"></div>
