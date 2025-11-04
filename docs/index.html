@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portal de Soporte Interno - El Dorado SRL</title>
+
+  <!-- Tema de Docsify -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
 </head>
 
@@ -13,9 +15,10 @@
   <script>
     window.$docsify = {
       name: 'Portal de Soporte Interno - El Dorado SRL',
-      homepage: 'README.md',              // Página de inicio
-      loadSidebar: true,                  // Menú de navegación
-      routerMode: 'hash',                 // Navegación estable
+      homepage: 'README.md',
+      loadSidebar: true,        // <- Sidebar siempre visible
+      basePath: '/docs/',       // <- CLAVE: Indica dónde buscar los .md
+      routerMode: 'hash',
       subMaxLevel: 2,
       auto2top: true
     };
