@@ -31,14 +31,13 @@ body {
   padding: 0;
 }
 
-/* ===== Fondo general con logo de marca de agua ===== */
+/* ===== LOGO DE FONDO COMO MARCA DE AGUA ===== */
 body {
-  background: 
-    url("https://cristiancouto.github.io/eldoradosrl.github.io/docs/imagenes/logo.png")
-    center center no-repeat fixed;
-  background-size: 40%; /* Ajustá tamaño */
-  background-color: #ffffff;
-  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #ffffff !important;
+  background-image: url("../imagenes/logo.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: 85vh !important;   /* ⬅️ Aumentamos fuerte en base al alto de pantalla */
 }
 
 /* ===== Contenedor central ===== */
