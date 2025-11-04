@@ -14,9 +14,9 @@
   <script>
     window.$docsify = {
       name: 'Portal de Soporte Interno - El Dorado SRL',
-      loadSidebar: true,
-      homepage: 'docs/README.md',
-      basePath: 'docs/',        // <- ESTA LÍNEA ERA LA QUE FALTABA
+      homepage: 'README.md',   // Ahora usará docs/README.md automáticamente
+      loadSidebar: 'sidebar.md', // <-- AQUI SE SOLUCIONA
+      basePath: 'docs',         // <-- Sin / final
       routerMode: 'hash',
       subMaxLevel: 2,
       auto2top: true
