@@ -1,62 +1,44 @@
+/* Fondo general (la imagen la agregamos después) */
 body {
-  background: #E6E6E6;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* Contenedor principal */
+/* Contenedor central donde se ve el contenido */
 .markdown-section {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(6px);
-  padding: 25px;
-  border-radius: 14px;
-  margin: 25px;
-  box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+  background: rgba(242, 140, 40, 0.75); /* Naranja #F28C28 con transparencia */
+  backdrop-filter: blur(8px);
+  padding: 24px;
+  border-radius: 18px; /* Bordes redondeados suaves */
+  margin: 24px;
+  color: #FFFFFF; /* Texto blanco para contraste */
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
 }
 
-/* Sidebar */
+/* Asegurar que títulos sigan siendo visibles encima del fondo */
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3 {
+  color: #FFFFFF; /* Blanco sobre naranja translúcido */
+}
+
+/* Sidebar se mantiene igual por ahora */
 .sidebar {
-  background: rgba(255,255,255,0.8) !important;
-  backdrop-filter: blur(4px);
-  border-right: 1px solid rgba(0,0,0,0.1);
-}
-
-.sidebar .app-name {
-  color: #0074C7 !important;
-  font-weight: bold;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 /* Links */
-.sidebar a,
 .markdown-section a {
-  color: #0074C7;
+  color: #FFFFFF;
+  text-decoration: underline;
 }
-
-.sidebar a:hover,
 .markdown-section a:hover {
-  color: #F28C28;
+  color: #000000;
 }
 
-/* Títulos */
-h1, h2, h3 {
-  color: #0074C7;
+/* Listas más legibles */
+.markdown-section li {
+  margin-bottom: 6px;
 }
-
-/* Bullets y texto */
-li {
-  margin-bottom: 5px;
-}
-
-/* Botones Docsify (paginación y otros) */
-button, .btn {
-  background: #F28C28 !important;
-  border-radius: 8px;
-  color: white !important;
-  padding: 8px 14px;
-  transition: 0.3s;
-}
-
-button:hover, .btn:hover {
-  background: #0074C7 !important;
-}
-
-/* Logo opcional más adelante */
