@@ -1,10 +1,13 @@
-/* ===== VARIABLES DE COLOR (Solo cambiar estas líneas) ===== */
+/* === PALETA OFICIAL EL DORADO === */
 :root{
-  --naranja-elec: rgba(255, 106, 0, 0.80); /* Naranja original */
-  --azul-titulo: #062FFF;                 /* Azul */
-  --azul-subtitulo: #062FFF;              /* Azul*/
-  --blanco: #FFFFFF;
+  --naranja-elec: rgba(210, 95, 42, 0.85);  /* NARANJA CORPORATIVO TRANSLÚCIDO */
+  --azul-titulo: #20619d;                  /* AZUL CORPORATIVO */
+  --azul-subtitulo: #20619d;               /* MISMO AZUL PARA COHERENCIA VISUAL */
+  --gris-claro: #888888;                   /* Gris para texto secundario */
+  --gris-oscuro: #444444;                  /* Gris para contraste */
+  --texto-claro: #ffffff;                  /* Blanco suave */
 }
+
 
 /* ===== Fondo general ===== */
 body{
@@ -19,50 +22,58 @@ body{
 /* ===== Contenedor central ===== */
 .markdown-section{
   background: var(--naranja-elec);
-  backdrop-filter: blur(14px);
-  padding: 32px 42px;
-  border-radius: 28px;
-  margin: 50px auto;
-  max-width: 1150px;
-  box-shadow: 0 8px 42px rgba(0,0,0,.80);
-  color: var(--blanco);
+  backdrop-filter: blur(10px);
+  padding: 34px 42px;
+  border-radius: 18px;
+  margin: 40px auto;
+  max-width: 1100px;
+  box-shadow: 0 0 26px rgba(0,0,0,.45);
+  color: var(--texto-claro) !important;
 }
 
-/* ===== TÍTULO PRINCIPAL (H1) ===== */
-.markdown-section h1:first-of-type,
 .markdown-section h1,
-.content h1 {
+.markdown-section h1:first-of-type {
   color: var(--azul-titulo) !important;
-  font-weight: 900 !important;
-  font-size: 38px !important;
-  text-transform: uppercase !important;
-  letter-spacing: 1px !important;
-  margin-bottom: 26px !important;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.35) !important;
+  font-weight: 900;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.35);
+  margin-bottom: 22px;
 }
 
-/* ===== SUBTÍTULOS (H2, H3, H4) ===== */
 .markdown-section h2,
 .markdown-section h3,
-.markdown-section h4,
-.content h2,
-.content h3,
-.content h4 {
+.markdown-section h4 {
   color: var(--azul-subtitulo) !important;
-  font-weight: 800 !important;
-  margin: 18px 0 12px !important;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.30) !important;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 8px;
 }
 
-/* ===== TEXTO GENERAL ===== */
 .markdown-section p,
-.markdown-section li,
-.content p,
-.content li {
-  color: #F1F1F1 !important;
-  font-weight: 600 !important;
-  font-size: 17px !important;
-  line-height: 1.65 !important;
+.markdown-section li{
+  color: var(--texto-claro) !important;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.6;
+
+}
+.whatsapp-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #51ba39;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0 14px rgba(0,0,0,.25);
+  transition: 0.3s;
+}
+.whatsapp-btn:hover {
+  background: #3b8c2e;
+  transform: scale(1.05);
 }
 
 /* ===== Enlaces ===== */
