@@ -3,22 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <title>Portal de Soporte Interno - El Dorado SRL</title>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Tema correcto -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
 </head>
-
 <body>
   <div id="app"></div>
 
   <script>
     window.$docsify = {
       name: 'Portal de Soporte Interno - El Dorado SRL',
-      homepage: 'README.md',
-      loadSidebar: '_sidebar.md',
-      subMaxLevel: 3,
-      auto2top: true
+      homepage: 'README.md',          // carga docs/README.md
+      loadSidebar: '_sidebar.md',     // carga docs/_sidebar.md
+      subMaxLevel: 2,
+      auto2top: true,
+      alias: {                        // garantiza rutas correctas en cualquier subruta
+        '/.*/_sidebar.md': '_sidebar.md',
+        '/.*/README.md': 'README.md'
+      }
     }
   </script>
 
+  <!-- Core docsify -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
 </html>
+
