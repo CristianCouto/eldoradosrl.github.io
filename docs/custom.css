@@ -18,7 +18,7 @@ body {
 /* ===== CONTENEDOR CENTRAL + MARCA DE AGUA ===== */
 .markdown-section{
   position: relative;
-  background: rgba(255, 255, 255, 0.05); /* Transparencia equilibrada */
+  background: rgba(255, 255, 255, 0.98); /* Transparencia */
   backdrop-filter: blur(14px);
   padding: 42px 48px;
   border-radius: 22px;
