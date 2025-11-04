@@ -1,5 +1,5 @@
 .markdown-section{
-  background: rgba(210, 95, 42, 0.80); /* Naranja oficial con transparencia */
+  background: rgba(210, 95, 42, 0.95); /* Naranja oficial con transparencia */
   backdrop-filter: blur(8px);
   padding: 32px 42px;
   border-radius: 28px;
