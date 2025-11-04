@@ -1,7 +1,7 @@
 /* ===== Variables de color (editá acá si querés afinar) ===== */
 :root{
-  --naranja-elec: rgba(255, 42, 0, 0.55);  /* #FF2A00 con transparencia */
-  --azul-elec: #2400FF;                    /* azul eléctrico de tu muestra */
+  --naranja-elec: rgba(255, 69, 0, 0.55);  /* #FF2A00 con transparencia */
+  --azul-elec: #003BFF;                    /* azul eléctrico de tu muestra */
   --blanco: #FFFFFF;
 }
 
