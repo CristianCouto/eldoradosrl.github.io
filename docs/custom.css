@@ -1,7 +1,12 @@
-/* ===============================
-   FONDO GENERAL
-   =============================== */
-body {
+/* ===== Variables de color (editá acá si querés afinar) ===== */
+:root{
+  --naranja-elec: rgba(255, 42, 0, 0.55);  /* #FF2A00 con transparencia */
+  --azul-elec: #2400FF;                    /* azul eléctrico de tu muestra */
+  --blanco: #FFFFFF;
+}
+
+/* ===== Fondo general ===== */
+body{
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -10,71 +15,65 @@ body {
   padding: 0;
 }
 
-/* ===============================
-   CONTENEDOR CENTRAL (NARANJA ELÉCTRICO)
-   =============================== */
-.markdown-section {
-  background: rgba(255, 42, 0, 0.55); /* Naranja eléctrico + transparencia */
+/* ===== Contenedor central (naranja vivo transparente) ===== */
+.markdown-section{
+  background: var(--naranja-elec);
   backdrop-filter: blur(14px);
   padding: 32px 42px;
   border-radius: 28px;
   margin: 50px auto;
   max-width: 1150px;
-  box-shadow: 0 8px 42px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 8px 42px rgba(0,0,0,.55);
+  color: var(--blanco);
 }
 
-/* ===============================
-   TÍTULO PRINCIPAL EN AZUL INTENSO
-   =============================== */
-.markdown-section h1:first-of-type {
-  color: #2A00FF !important; /* Azul intenso */
+/* ===== Título principal en AZUL ELÉCTRICO ===== */
+.markdown-section h1:first-of-type,
+.markdown-section h1{
+  color: var(--azul-elec) !important;
   font-weight: 900;
   font-size: 38px;
-  text-transform: uppercase;
   letter-spacing: 1px;
+  text-transform: uppercase;
   margin-bottom: 26px;
 }
 
-/* ===============================
-   RESTO DE TÍTULOS EN BLANCO VIVO
-   =============================== */
+/* ===== Resto de títulos en blanco fuerte ===== */
 .markdown-section h2,
 .markdown-section h3,
-.markdown-section h4 {
-  color: #FFFFFF;
+.markdown-section h4{
+  color: var(--blanco);
   font-weight: 800;
-  margin-top: 18px;
-  margin-bottom: 12px;
+  margin: 18px 0 12px;
 }
 
-/* ===============================
-   TEXTO BLANCO MATE
-   =============================== */
+/* ===== Texto general ===== */
 .markdown-section p,
-.markdown-section li {
-  color: #FFFFFF;
+.markdown-section li{
+  color: var(--blanco);
   font-weight: 600;
   font-size: 17px;
   line-height: 1.65;
 }
 
-/* ===============================
-   LINKS
-   =============================== */
-.markdown-section a {
-  color: #FFFFFF;
+/* ===== Enlaces ===== */
+.markdown-section a{
+  color: var(--blanco);
   font-weight: 800;
   text-decoration: underline;
 }
-.markdown-section a:hover {
-  color: #000000;
-}
+.markdown-section a:hover{ color: #000; }
 
-/* ===============================
-   SIDEBAR (SIN CAMBIOS VISUALES)
-   =============================== */
-.sidebar {
-  background: rgba(255, 255, 255, 0.90) !important;
+/* ===== Sidebar (sin cambios visuales por ahora) ===== */
+.sidebar{
+  background: rgba(255,255,255,0.90) !important;
   backdrop-filter: blur(4px);
   border-right: 1px solid rgba(0,0,0,0.18);
+}
+
+/* Nombre del proyecto en el sidebar en AZUL ELÉCTRICO también */
+.sidebar .app-name,
+.sidebar .app-name-link{
+  color: var(--azul-elec) !important;
+  font-weight: 800 !important;
 }
