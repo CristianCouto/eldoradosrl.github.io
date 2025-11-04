@@ -6,15 +6,17 @@ body {
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* Contenedor central donde se ve el contenido */
+/* Contenedor central */
 .markdown-section {
-  background: rgba(242, 140, 40, 0.75); /* Naranja #F28C28 con transparencia */
-  backdrop-filter: blur(8px);
+  background: rgba(255, 122, 0, 0.65); /* NARANJA ELÉCTRICO TRANSPARENTE */
+  backdrop-filter: blur(10px);
   padding: 24px;
-  border-radius: 18px; /* Bordes redondeados suaves */
+  border-radius: 22px;
   margin: 24px;
-  color: #FFFFFF; /* Texto blanco para contraste */
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+  color: #D9D9D9; /* GRIS CLARO */
+  font-weight: 600; /* NEGRITA SUAVE */
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.35);
+  
 }
 
 /* Asegurar que títulos sigan siendo visibles encima del fondo */
