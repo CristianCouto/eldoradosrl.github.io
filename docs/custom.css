@@ -1,8 +1,8 @@
 /* ===== VARIABLES DE COLOR (Solo cambiar estas 3 líneas si querés afinar colores) ===== */
 :root{
-  --naranja-elec: rgba(255, 106, 0, 0.80);  /* Tu naranja original → NO SE TOCA */
-  --azul-titulo: #2185FF;                  /* Azul vivo para TÍTULO PRINCIPAL */
-  --azul-subtitulo: #5FB0FF;               /* Azul más suave para subtítulos y enlaces */
+  --naranja-elec: rgba(255, 106, 0, 0.80);  /* Naranja original */
+  --azul-titulo: #1A06FF;                  /* Azul eléctrico para títulos principales */
+  --azul-subtitulo: #3D3BFF;               /* Azul suave para subtítulos */
   --blanco: #FFFFFF;
 }
 
@@ -16,7 +16,7 @@ body{
   padding: 0;
 }
 
-/* ===== Contenedor central (naranja vivo transparente) ===== */
+/* ===== Contenedor central ===== */
 .markdown-section{
   background: var(--naranja-elec);
   backdrop-filter: blur(14px);
@@ -28,7 +28,7 @@ body{
   color: var(--blanco);
 }
 
-/* ===== Título principal (H1) en azul vivo ===== */
+/* ===== TÍTULO PRINCIPAL (H1) ===== */
 .markdown-section h1:first-of-type,
 .markdown-section h1{
   color: var(--azul-titulo) !important;
@@ -37,18 +37,20 @@ body{
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 26px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.35);
 }
 
-/* ===== Subtítulos (H2, H3, H4) en azul suave ===== */
+/* ===== SUBTÍTULOS (H2, H3, H4) ===== */
 .markdown-section h2,
 .markdown-section h3,
 .markdown-section h4{
   color: var(--azul-subtitulo) !important;
   font-weight: 800;
   margin: 18px 0 12px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.30);
 }
 
-/* ===== Texto general en blanco ===== */
+/* ===== Párrafos y listas ===== */
 .markdown-section p,
 .markdown-section li{
   color: var(--blanco);
@@ -57,27 +59,27 @@ body{
   line-height: 1.65;
 }
 
-/* ===== Links (también azul suave para coherencia visual) ===== */
-.markdown-section a,
-.markdown-section a:visited{
-  color: var(--azul-subtitulo) !important;
-  font-weight: 700;
+/* ===== Enlaces ===== */
+.markdown-section a{
+  color: var(--azul-titulo) !important;
+  font-weight: 800;
   text-decoration: underline;
 }
 .markdown-section a:hover{
   color: var(--blanco) !important;
+  text-decoration: none;
 }
 
-/* ===== Sidebar (NO se modifica visualmente por ahora) ===== */
+/* ===== Sidebar ===== */
 .sidebar{
   background: rgba(255,255,255,0.90) !important;
   backdrop-filter: blur(4px);
   border-right: 1px solid rgba(0,0,0,0.18);
 }
 
-/* Nombre del proyecto (sidebar) mantiene el azul anterior */
+/* Nombre del proyecto en sidebar */
 .sidebar .app-name,
 .sidebar .app-name-link{
-  color: #0074C7 !important;
+  color: var(--azul-titulo) !important;
   font-weight: 800 !important;
 }
