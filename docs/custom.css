@@ -11,19 +11,19 @@ body {
 }
 
 /* ===============================
-   CONTENEDOR DE CONTENIDO (Centro)
+   CONTENEDOR CENTRAL
    =============================== */
 .markdown-section {
-  background: rgba(255, 122, 0, 0.60); /* NARANJA MÁS VIVO TRANSPARENTE */
-  backdrop-filter: blur(10px);
-  padding: 24px 32px;
-  border-radius: 22px;
-  margin: 38px auto;
+  background: rgba(255, 107, 0, 0.40); /* NARANJA MUY VIVO + MÁS TRANSPARENTE */
+  backdrop-filter: blur(14px); /* Blur más suave y estético */
+  padding: 28px 36px;
+  border-radius: 24px;
+  margin: 40px auto;
   max-width: 1100px;
-  color: #D9D9D9; /* TEXTO GRIS CLARO */
-  font-weight: 600; /* NEGRITA SUAVE EN TODO EL TEXTO */
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
-  line-height: 1.55;
+  color: #E6E6E6; /* Gris claro más visible */
+  font-weight: 700; /* Negrita marcada */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+  line-height: 1.6;
 }
 
 /* ===============================
@@ -31,13 +31,17 @@ body {
    =============================== */
 .markdown-section h1,
 .markdown-section h2,
-.markdown-section h3,
-.markdown-section h4 {
-  color: #FFFFFF; /* Blanco puro para contraste */
-  font-weight: 700;
-  margin-top: 18px;
-  margin-bottom: 14px;
+.markdown-section h3 {
+  color: #FFFFFF; /* Títulos blancos para contraste */
+  font-weight: 800;
 }
+
+.markdown-section p,
+.markdown-section li {
+  color: #E6E6E6; /* Gris claro */
+  font-weight: 700;
+}
+
 
 /* ===============================
    LISTAS / PÁRRAFOS
