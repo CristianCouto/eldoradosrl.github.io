@@ -1,8 +1,8 @@
-/* ===== VARIABLES DE COLOR (Solo cambiar estas 3 líneas si querés afinar colores) ===== */
+/* ===== VARIABLES DE COLOR (Solo cambiar estas líneas) ===== */
 :root{
-  --naranja-elec: rgba(255, 106, 0, 0.80);  /* Naranja original */
-  --azul-titulo: #1A06FF;                  /* Azul eléctrico para títulos principales */
-  --azul-subtitulo: #FFFFFF;               /* Azul suave para subtítulos */
+  --naranja-elec: rgba(255, 106, 0, 0.80);  /* Naranja original: OK */
+  --azul-titulo: #1A06FF;                  /* Azul eléctrico (H1) */
+  --azul-subtitulo: #3D3BFF;               /* Azul suave (H2, H3, H4) */
   --blanco: #FFFFFF;
 }
 
