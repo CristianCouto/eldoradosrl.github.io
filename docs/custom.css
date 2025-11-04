@@ -112,7 +112,7 @@ table td, table th {
   background-image: url("imagenes/fondo-textura.png");
   background-size: cover;
   background-position: center;
-  opacity: 0.35;  /* 🔥 se ve más claro y definido */
+  opacity: 0.20;  /* 🔥 se ve más claro y definido */
   z-index: -1;
 }
 
