@@ -1,5 +1,6 @@
 /* ===============================
-   FONDO GENERAL (La imagen se agrega después)
+   FONDO GENERAL
+   (La imagen la agregamos después)
    =============================== */
 body {
   background-size: cover;
@@ -11,51 +12,51 @@ body {
 }
 
 /* ===============================
-   CONTENEDOR CENTRAL
+   CONTENEDOR CENTRAL (NARANJA ACERO)
    =============================== */
-
 .markdown-section {
-  background: rgba(255, 84, 0, 0.45); /* Naranja acero + transparencia */
-  backdrop-filter: blur(16px); /* Blur más elegante */
-  padding: 30px 38px;
-  border-radius: 26px; /* Bordes más suaves */
-  margin: 48px auto;
-  max-width: 1120px;
-  color: #E8E8E8; /* Gris claro más fino */
-  font-weight: 700; /* Negrita bien marcada */
-  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.55); /* Sombra profunda */
-  line-height: 1.7;
+  background: rgba(255, 84, 0, 0.38); /* Naranja acero caliente + más transparencia */
+  backdrop-filter: blur(14px);
+  padding: 32px 42px;
+  border-radius: 28px;
+  margin: 50px auto;
+  max-width: 1150px;
+  box-shadow: 0 8px 42px rgba(0, 0, 0, 0.50);
 }
 
 /* ===============================
-   TÍTULOS
+   TÍTULO PRINCIPAL (CHILLÓN)
    =============================== */
-.markdown-section h1,
+.markdown-section h1:first-of-type {
+  color: #0074C7 !important; /* AZUL fuerte mazizo */
+  font-weight: 900;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+
+/* ===============================
+   RESTO DE TÍTULOS (ALTO CONTRASTE)
+   =============================== */
 .markdown-section h2,
-.markdown-section h3 {
-  color: #FFFFFF; /* Títulos blancos para contraste */
+.markdown-section h3,
+.markdown-section h4 {
+  color: #FFFFFF; /* Blanco brillante */
   font-weight: 800;
+  margin-top: 18px;
+  margin-bottom: 12px;
 }
-
-.markdown-section p,
-.markdown-section li {
-  color: #E6E6E6; /* Gris claro */
-  font-weight: 700;
-}
-
 
 /* ===============================
-   LISTAS / PÁRRAFOS
+   TEXTO PRINCIPAL EN BLANCO MATE NEGRITA
    =============================== */
 .markdown-section p,
 .markdown-section li {
-  color: #D9D9D9; /* Gris claro */
-  font-weight: 600;
-  font-size: 16px;
-}
-
-.markdown-section li {
-  margin-bottom: 8px;
+  color: #F1F1F1; /* Blanco mate suave */
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.65;
 }
 
 /* ===============================
@@ -63,23 +64,18 @@ body {
    =============================== */
 .markdown-section a {
   color: #FFFFFF;
+  font-weight: 800;
   text-decoration: underline;
-  font-weight: 700;
 }
 .markdown-section a:hover {
-  color: #000000; /* Negro para efecto de contraste */
+  color: #000000;
 }
 
 /* ===============================
-   SIDEBAR (Se mantiene sin cambios por ahora)
+   SIDEBAR (SIN TOCAR POR AHORA)
    =============================== */
 .sidebar {
   background: rgba(255, 255, 255, 0.85) !important;
   backdrop-filter: blur(4px);
   border-right: 1px solid rgba(0,0,0,0.15);
-}
-
-.sidebar .app-name {
-  font-weight: bold;
-  color: #0074C7 !important;
 }
