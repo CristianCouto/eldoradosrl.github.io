@@ -8,8 +8,8 @@
   <!-- Tema Docsify -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
 
-  <!-- ✅ Nuestro CSS personalizado -->
-  <link rel="stylesheet" href="./custom.css" />
+  <!-- ✅ Cargar CSS desde /docs -->
+  <link rel="stylesheet" href="./docs/custom.css" />
 </head>
 
 <body>
@@ -18,8 +18,8 @@
   <script>
     window.$docsify = {
       name: 'Portal de Soporte Interno - El Dorado SRL',
-      homepage: 'README.md',
-      loadSidebar: '_sidebar.md',
+      homepage: 'docs/README.md',   // ✅ Página inicial bien cargada
+      loadSidebar: 'docs/_sidebar.md', // ✅ Sidebar desde docs
       routerMode: 'hash',
       subMaxLevel: 3,
       auto2top: true
