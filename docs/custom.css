@@ -1,5 +1,5 @@
 /* ===============================
-   FONDO GENERAL (Imagen se agrega después)
+   FONDO GENERAL
    =============================== */
 body {
   background-size: cover;
@@ -11,56 +11,55 @@ body {
 }
 
 /* ===============================
-   CONTENEDOR CENTRAL (NARANJA VIVO TRANSPARENTE)
+   CONTENEDOR CENTRAL (NARANJA ELÉCTRICO)
    =============================== */
 .markdown-section {
-  background: rgba(255, 94, 0, 0.55); /* Naranja vivo eléctrico */
+  background: rgba(255, 42, 0, 0.55); /* Naranja eléctrico + transparencia */
   backdrop-filter: blur(14px);
   padding: 32px 42px;
   border-radius: 28px;
   margin: 50px auto;
   max-width: 1150px;
-  box-shadow: 0 8px 42px rgba(0, 0, 0, 0.50);
-  color: #F5F5F5;
+  box-shadow: 0 8px 42px rgba(0, 0, 0, 0.55);
 }
 
 /* ===============================
-   TÍTULO PRINCIPAL
+   TÍTULO PRINCIPAL EN AZUL INTENSO
    =============================== */
 .markdown-section h1:first-of-type {
-  color: #005CFF !important; /* Azul eléctrico */
+  color: #2A00FF !important; /* Azul intenso */
   font-weight: 900;
   font-size: 38px;
+  text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 
 /* ===============================
-   TÍTULOS SECUNDARIOS
+   RESTO DE TÍTULOS EN BLANCO VIVO
    =============================== */
 .markdown-section h2,
 .markdown-section h3,
 .markdown-section h4 {
-  color: #FFFFFF; /* Blanco brillante */
+  color: #FFFFFF;
   font-weight: 800;
   margin-top: 18px;
   margin-bottom: 12px;
 }
 
 /* ===============================
-   TEXTO GENERAL
+   TEXTO BLANCO MATE
    =============================== */
 .markdown-section p,
-.markdown-section li,
-.markdown-section table {
-  color: #F5F5F5;
+.markdown-section li {
+  color: #FFFFFF;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.65;
 }
 
 /* ===============================
-   ENLACES
+   LINKS
    =============================== */
 .markdown-section a {
   color: #FFFFFF;
@@ -72,11 +71,10 @@ body {
 }
 
 /* ===============================
-   SIDEBAR (SIN CAMBIOS AÚN)
+   SIDEBAR (SIN CAMBIOS VISUALES)
    =============================== */
 .sidebar {
-  background: rgba(255, 255, 255, 0.85) !important;
+  background: rgba(255, 255, 255, 0.90) !important;
   backdrop-filter: blur(4px);
-  border-right: 1px solid rgba(0,0,0,0.15);
+  border-right: 1px solid rgba(0,0,0,0.18);
 }
-
