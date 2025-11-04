@@ -59,4 +59,90 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 26px;
-  text-shadow: 0 1p
+  text-shadow: 0 1px 3px rgba(0,0,0,0.35);
+}
+
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4{
+  color: var(--naranja);
+  font-weight: 800;
+  margin-top: 26px;
+  margin-bottom: 8px;
+}
+
+/* ===== TEXTOS ===== */
+.markdown-section p,
+.markdown-section li{
+  color: #222;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+/* ===== TABLAS ===== */
+table td, table th {
+  background: rgba(255,255,255,0.85) !important;
+  color: #222 !important;
+}
+
+/* ===== ENLACES ===== */
+.markdown-section a{
+  color: var(--azul);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.markdown-section a:hover{
+  color: var(--naranja);
+}
+
+/* ===== SIDEBAR (LATERAL) ===== */
+.sidebar{
+  position: relative;
+  background: #000000 !important;
+  backdrop-filter: blur(4px);
+  border-right: 1px solid rgba(255,255,255,0.18);
+  overflow: hidden;
+}
+
+/* Fondo texturado corporativo */
+.sidebar::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../imagenes/fondo-textura.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.55;
+  z-index: -1;
+}
+
+/* Título del Portal */
+.sidebar .app-name,
+.sidebar .app-name-link{
+  color: #ffffff !important;
+  font-weight: 900 !important;
+  font-size: 20px !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.55);
+}
+
+/* Items del menú */
+.sidebar ul li a{
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 16px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+  transition: all 0.2s ease;
+}
+
+.sidebar ul li a:hover{
+  color: var(--naranja) !important;
+}
+
+/* Ítem activo */
+.sidebar ul li.active > a{
+  color: var(--naranja) !important;
+  font-weight: 800 !important;
+  text-decoration: underline;
+}
