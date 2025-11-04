@@ -97,45 +97,43 @@ table td, table th {
   color: var(--naranja);
 /* ===== SIDEBAR ===== */
 .sidebar{
-  background: rgba(255,255,255,0.12) !important; /* más transparente */
-  backdrop-filter: blur(6px);
-  border-right: 1px solid rgba(255,255,255,0.15);
   position: relative;
+  background: rgba(0,0,0,0.25) !important; /* Fondo transparente suave */
+  backdrop-filter: blur(6px);
+  border-right: 1px solid rgba(255,255,255,0.20);
   overflow: hidden;
 }
 
-/* Fondo texturado en sidebar */
+/* Fondo texturado con la imagen corporativa */
 .sidebar::before{
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("imagenes/fondo-textura.png");
+  background-image: url("../imagenes/fondo-textura.png"); /* ✅ Ruta correcta */
   background-size: cover;
   background-position: center;
-  opacity: 0.20;  /* 🔥 se ve más claro y definido */
-  z-index: -1;
+  opacity: 0.35; /* Ajusta entre 0.20 y 0.45 */
+  z-index: -1; /* Para colocar detrás del texto */
 }
 
-/* TÍTULO DEL SIDEBAR */
+/* ===== TÍTULO DE LA SIDEBAR ===== */
 .sidebar .app-name,
 .sidebar .app-name-link{
-  color: #ffffff !important; /* blanco puro */
+  color: #ffffff !important;  /* ✅ Blanco */
   font-weight: 800 !important;
-  font-size: 20px !important;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.45);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
 
-/* ITEMS DEL MENÚ */
+/* ===== ITEMS DEL MENÚ ===== */
 .sidebar ul li a{
-  color: #ffffff !important;
-  font-weight: 500;
+  color: #ffffff !important;  /* ✅ Blanco */
   font-size: 16px;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.55);
+  font-weight: 500;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
 
-/* Item activo / seleccionado */
+/* Ítem activo */
 .sidebar ul li.active > a{
-  color: var(--naranja) !important;
+  color: var(--naranja) !important; /* 🔥 Destaca en naranja corporativo */
   font-weight: 700 !important;
 }
-
