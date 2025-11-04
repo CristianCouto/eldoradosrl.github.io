@@ -1,83 +1,114 @@
-.markdown-section{
-  background: rgba(255, 255, 255, 0.30); /* Naranja oficial con transparencia */
-  backdrop-filter: blur(18px);
-  padding: 32px 42px;
-  border-radius: 28px;
-  margin: 50px auto;
-  max-width: 1400px;
-  box-shadow: 0 12px 46px rgba(0,0,0,.35);
-  color: var(--blanco);
+/* ===== PALETA CORPORATIVA ===== */
+:root{
+  --naranja: #d25f2a;
+  --azul: #20619d;
+  --gris-claro: #e6e6e6;
+  --blanco: #ffffff;
+  --texto: #333333;
 }
 
-
-/* ===== Fondo general ===== */
+/* ===== FONDO GENERAL ===== */
 body {
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: #ffffff;
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-body {
-  background-image: url("../imagenes/logo.png") !important;
-  background-color: #ffffff !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  background-size: cover !important; /* ← fuerza a ocupar toda la pantalla */
-}
-
-
-/* ===== LOGO DE FONDO A PANTALLA COMPLETA ===== */
-body {
-  background-color: #ffffff !important;
-  background-image: url("../imagenes/logo.png") !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  background-size: cover !important; /* ← ahora ocupa TODA la ventana */
-  opacity: 1 !important;
-}
-
-/* ===== Contenedor central ===== */
+/* ===== CONTENEDOR CENTRAL + MARCA DE AGUA ===== */
 .markdown-section{
-  background: var(--naranja-elec);
-  backdrop-filter: blur(10px);
-  padding: 34px 42px;
-  border-radius: 18px;
-  margin: 40px auto;
-  max-width: 1100px;
-  box-shadow: 0 0 26px rgba(0,0,0,.45);
-  color: var(--texto-claro) !important;
+  position: relative;
+  background: rgba(255, 255, 255, 0.60); /* Transparencia equilibrada */
+  backdrop-filter: blur(14px);
+  padding: 42px 48px;
+  border-radius: 22px;
+  margin: 60px auto;
+  max-width: 1200px;
+  box-shadow: 0 10px 48px rgba(0,0,0,.35);
+  color: var(--texto);
 }
 
-.markdown-section h1,
-.markdown-section h1:first-of-type {
-  color: var(--azul-titulo) !important;
+/* Marca de agua del logo */
+.markdown-section::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
+  background: url("../imagenes/logo.png") no-repeat center;
+  background-size: contain;
+  opacity: 0.12; /* 🔥 Elegante y visible */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Todo el contenido por encima de la marca de agua */
+.markdown-section *{
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== TITULOS ===== */
+.markdown-section h1{
+  color: var(--azul);
   font-weight: 900;
-  font-size: 36px;
+  font-size: 38px;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.35);
-  margin-bottom: 22px;
 }
 
 .markdown-section h2,
 .markdown-section h3,
-.markdown-section h4 {
-  color: var(--azul-subtitulo) !important;
+.markdown-section h4{
+  color: var(--naranja);
   font-weight: 800;
-  margin-top: 20px;
+  margin-top: 26px;
   margin-bottom: 8px;
 }
 
+/* ===== TEXTOS ===== */
 .markdown-section p,
 .markdown-section li{
-  color: var(--texto-claro) !important;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 1.6;
-
+  color: #222;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.65;
 }
+
+/* ===== TABLAS ===== */
+table td, table th {
+  background: rgba(255,255,255,0.85) !important;
+  color: #222 !important;
+}
+
+/* ===== ENLACES ===== */
+.markdown-section a{
+  color: var(--azul);
+  font-weight: 700;
+  text-decoration: underline;
+}
+.markdown-section a:hover{
+  color: var(--naranja);
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar{
+  background: rgba(255,255,255,0.92) !important;
+  backdrop-filter: blur(6px);
+  border-right: 1px solid rgba(0,0,0,0.12);
+}
+
+/* Título sidebar */
+.sidebar .app-name,
+.sidebar .app-name-link{
+  color: var(--azul) !important;
+  font-weight: 800;
+}
+
+/* ===== BOTÓN WHATSAPP ===== */
 .whatsapp-btn {
   position: fixed;
   bottom: 24px;
@@ -94,56 +125,4 @@ body {
 .whatsapp-btn:hover {
   background: #3b8c2e;
   transform: scale(1.05);
-}
-
-/* ===== Enlaces ===== */
-.markdown-section a{
-  color: var(--azul-titulo) !important;
-  font-weight: 800;
-  text-decoration: underline;
-}
-.markdown-section a:hover{
-  color: var(--blanco) !important;
-  text-decoration: none;
-}
-
-/* ===== Sidebar ===== */
-.sidebar{
-  background: rgba(255,255,255,0.90) !important;
-  backdrop-filter: blur(4px);
-  border-right: 1px solid rgba(0,0,0,0.18);
-}
-
-/* Nombre del proyecto en sidebar */
-.sidebar .app-name,
-.sidebar .app-name-link{
-  color: var(--azul-titulo) !important;
-  font-weight: 800 !important;
-}
-
-.markdown-section{
-  background: var(--naranja-elec);
-  backdrop-filter: blur(14px);
-  padding: 32px 42px;
-  border-radius: 28px;
-  margin: 50px auto;
-  max-width: 1150px;
-  box-shadow: 0 8px 42px rgba(0,0,0,.80);
-  color: var(--blanco);
-  position: relative;
-}
-/* ===== LOGO DE FONDO COMO MARCA DE AGUA ===== */
-body {
-  background-color: #ffffff !important;
-  background-image: url("../imagenes/logo.png") !important;
-  background-repeat: no-repeat !important;
-  background-position: center 140px !important; /* mueve el logo verticalmente */
-  background-size: 420px !important; /* ajustá tamaño según preferencia */
-  opacity: 1 !important;
-}
-
-/* Para asegurarnos de que el contenido siga siendo totalmente legible */
-.markdown-section {
-  background: rgba(255, 255, 255, 0.92) !important; /* Blanquito transparente */
-  backdrop-filter: blur(4px);
 }
