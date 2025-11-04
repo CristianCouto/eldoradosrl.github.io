@@ -1,139 +1,51 @@
-/* ===== PALETA CORPORATIVA ===== */
-:root{
-  --naranja: #d25f2a;
-  --azul: #20619d;
-  --gris-claro: #e6e6e6;
-  --blanco: #ffffff;
-  --texto: #333333;
-}
-
-/* ===== FONDO GENERAL ===== */
-body {
-  background: #ffffff;
-  font-family: "Segoe UI", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* ===== CONTENEDOR CENTRAL + MARCA DE AGUA ===== */
-.markdown-section{
-  position: relative;
-  background: rgba(255, 255, 255, 0.98); /* Transparencia */
-  backdrop-filter: blur(14px);
-  padding: 42px 48px;
-  border-radius: 22px;
-  margin: 60px auto;
-  max-width: 1200px;
-  box-shadow: 0 10px 48px rgba(0,0,0,.35);
-  color: var(--texto);
-}
-
-/* Marca de agua del logo */
-.markdown-section::before{
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
-  height: 70%;
-  background: url("../imagenes/logo.png") no-repeat center;
-  background-size: contain;
-  opacity: 0.12; /* 🔥 Elegante y visible */
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Todo el contenido por encima de la marca de agua */
-.markdown-section *{
-  position: relative;
-  z-index: 1;
-}
-
-/* TÍTULO PRINCIPAL (H1) */
-.markdown-section h1:first-of-type,
-.markdown-section h1{
-  color: var(--azul-titulo) !important;
-  font-weight: 900;
-  font-size: 38px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 26px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.35);
-}
-
-
-.markdown-section h2,
-.markdown-section h3,
-.markdown-section h4{
-  color: var(--naranja);
-  font-weight: 800;
-  margin-top: 26px;
-  margin-bottom: 8px;
-}
-
-/* ===== TEXTOS ===== */
-.markdown-section p,
-.markdown-section li{
-  color: #222;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.65;
-}
-
-/* ===== TABLAS ===== */
-table td, table th {
-  background: rgba(255,255,255,0.85) !important;
-  color: #222 !important;
-}
-
-/* ===== ENLACES ===== */
-.markdown-section a{
-  color: var(--azul);
-  font-weight: 700;
-  text-decoration: underline;
-}
-.markdown-section a:hover{
-  color: var(--naranja);
-/* ===== SIDEBAR ===== */
+/* ===== SIDEBAR (LATERAL) ===== */
 .sidebar{
   position: relative;
-  background: rgba(0,0,0,0.25) !important; /* Fondo transparente suave */
-  backdrop-filter: blur(6px);
-  border-right: 1px solid rgba(255,255,255,0.20);
+  background: #000000 !important; /* Base dark para mezcla */
+  backdrop-filter: blur(4px);
+  border-right: 1px solid rgba(255,255,255,0.18);
   overflow: hidden;
 }
 
-/* Fondo texturado con la imagen corporativa */
+/* Fondo texturado corporativo */
 .sidebar::before{
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../imagenes/fondo-textura.png"); /* ✅ Ruta correcta */
+  background-image: url("../imagenes/fondo-textura.png");
   background-size: cover;
   background-position: center;
-  opacity: 0.35; /* Ajusta entre 0.20 y 0.45 */
-  z-index: -1; /* Para colocar detrás del texto */
+  opacity: 0.55; /* Ajusta entre 0.40 y 0.65 según visibilidad del texto */
+  z-index: -1;
 }
 
-/* ===== TÍTULO DE LA SIDEBAR ===== */
+/* Título (Portal de Soporte Interno - El Dorado SRL) */
 .sidebar .app-name,
 .sidebar .app-name-link{
-  color: #ffffff !important;  /* ✅ Blanco */
-  font-weight: 800 !important;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  color: #ffffff !important;
+  font-weight: 900 !important;
+  font-size: 20px !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.55);
 }
 
-/* ===== ITEMS DEL MENÚ ===== */
+/* ===== ITEMS DEL MENÚ DE LA SIDEBAR ===== */
 .sidebar ul li a{
-  color: #ffffff !important;  /* ✅ Blanco */
+  color: #ffffff !important;
+  font-weight: 600 !important;
   font-size: 16px;
-  font-weight: 500;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+  transition: all 0.2s ease;
+}
+
+/* Hover para mejor sensación */
+.sidebar ul li a:hover{
+  color: var(--naranja) !important;
 }
 
 /* Ítem activo */
 .sidebar ul li.active > a{
-  color: var(--naranja) !important; /* 🔥 Destaca en naranja corporativo */
-  font-weight: 700 !important;
+  color: var(--naranja) !important;
+  font-weight: 800 !important;
+  text-decoration: underline;
 }
+
