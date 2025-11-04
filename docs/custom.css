@@ -21,15 +21,13 @@ body {
 }
 
 body {
-  background-color: #ffffff;
-  background-image: url("https://cristiancouto.github.io/eldoradosrl.github.io/imagenes/logo.png");
-  background-repeat: no-repeat;
-  background-position: center 120px; /* ajusta la altura */
-  background-size: 22%; /* probá entre 18% y 28% */
-  font-family: "Segoe UI", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  background-image: url("../imagenes/logo.png") !important;
+  background-color: #ffffff !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important; /* ← fuerza a ocupar toda la pantalla */
 }
+
 
 /* ===== LOGO DE FONDO A PANTALLA COMPLETA ===== */
 body {
