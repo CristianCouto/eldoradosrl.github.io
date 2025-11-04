@@ -53,7 +53,7 @@ body{
 /* ===== Párrafos y listas ===== */
 .markdown-section p,
 .markdown-section li{
-  color: var(--blanco);
+  color: #E5E5E5 !important;  /* Gris claro visible sobre naranja y sobre fondo blanco */
   font-weight: 600;
   font-size: 17px;
   line-height: 1.65;
