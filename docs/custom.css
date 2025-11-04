@@ -100,3 +100,19 @@ body{
   color: var(--azul-titulo) !important;
   font-weight: 800 !important;
 }
+
+/* ===== LOGO DE FONDO DETRÁS DEL CONTENEDOR ===== */
+.markdown-section {
+  background:
+    url("../imagenes/logo.png") center center no-repeat,
+    var(--naranja-elec); /* mantiene el naranja translúcido */
+  background-size: 55%; /* Ajustá aquí el tamaño del logo */
+  backdrop-filter: blur(10px);
+  padding: 34px 42px;
+  border-radius: 18px;
+  margin: 40px auto;
+  max-width: 1100px;
+  box-shadow: 0 0 26px rgba(0,0,0,.45);
+  color: var(--texto-claro) !important;
+}
+
