@@ -23,11 +23,11 @@ El sistema funciona en una PC local con LM Studio + Backend Flask + Frontend Rea
 
 2. **Iniciar Backend**
 
-**python app.py**
+-   **python app.py**
 
 3. **Iniciar Frontend**
    
-**npm start**
+-   **npm start**
 
 5. Acceder en navegador:
 http://localhost:3000
