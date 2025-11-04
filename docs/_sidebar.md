@@ -1,4 +1,4 @@
-- **Portal de Soporte Interno**
+- **Documentación**
   - [Guía de Usuario](guia-usuario.md)
   - [Instalación del Sistema](instalacion.md)
   - [Panel de Administración](administrador.md)
