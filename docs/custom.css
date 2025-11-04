@@ -1,0 +1,62 @@
+body {
+  background: #E6E6E6;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.markdown-section {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  padding: 25px;
+  border-radius: 14px;
+  margin: 25px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+}
+
+/* Sidebar */
+.sidebar {
+  background: rgba(255,255,255,0.8) !important;
+  backdrop-filter: blur(4px);
+  border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+.sidebar .app-name {
+  color: #0074C7 !important;
+  font-weight: bold;
+}
+
+/* Links */
+.sidebar a,
+.markdown-section a {
+  color: #0074C7;
+}
+
+.sidebar a:hover,
+.markdown-section a:hover {
+  color: #F28C28;
+}
+
+/* Títulos */
+h1, h2, h3 {
+  color: #0074C7;
+}
+
+/* Bullets y texto */
+li {
+  margin-bottom: 5px;
+}
+
+/* Botones Docsify (paginación y otros) */
+button, .btn {
+  background: #F28C28 !important;
+  border-radius: 8px;
+  color: white !important;
+  padding: 8px 14px;
+  transition: 0.3s;
+}
+
+button:hover, .btn:hover {
+  background: #0074C7 !important;
+}
+
+/* Logo opcional más adelante */
