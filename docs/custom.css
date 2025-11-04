@@ -30,33 +30,39 @@ body{
 
 /* ===== TÍTULO PRINCIPAL (H1) ===== */
 .markdown-section h1:first-of-type,
-.markdown-section h1{
+.markdown-section h1,
+.content h1 {
   color: var(--azul-titulo) !important;
-  font-weight: 900;
-  font-size: 38px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 26px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.35);
+  font-weight: 900 !important;
+  font-size: 38px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  margin-bottom: 26px !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.35) !important;
 }
 
 /* ===== SUBTÍTULOS (H2, H3, H4) ===== */
 .markdown-section h2,
 .markdown-section h3,
-.markdown-section h4{
+.markdown-section h4,
+.content h2,
+.content h3,
+.content h4 {
   color: var(--azul-subtitulo) !important;
-  font-weight: 800;
-  margin: 18px 0 12px;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.30);
+  font-weight: 800 !important;
+  margin: 18px 0 12px !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.30) !important;
 }
 
-/* ===== Párrafos y listas ===== */
+/* ===== TEXTO GENERAL ===== */
 .markdown-section p,
-.markdown-section li{
-  color: #E5E5E5 !important;  /* Gris claro visible sobre naranja y sobre fondo blanco */
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 1.65;
+.markdown-section li,
+.content p,
+.content li {
+  color: #F1F1F1 !important;
+  font-weight: 600 !important;
+  font-size: 17px !important;
+  line-height: 1.65 !important;
 }
 
 /* ===== Enlaces ===== */
