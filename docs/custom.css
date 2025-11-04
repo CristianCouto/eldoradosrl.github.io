@@ -13,15 +13,16 @@ body {
 /* ===============================
    CONTENEDOR CENTRAL
    =============================== */
+
 .markdown-section {
-  background: rgba(255, 107, 0, 0.40); /* NARANJA MUY VIVO + MÁS TRANSPARENTE */
-  backdrop-filter: blur(14px); /* Blur más suave y estético */
+  background: rgba(255, 107, 0, 0.45); /* Naranja Eléctrico + Transparencia */
+  backdrop-filter: blur(14px);
   padding: 28px 36px;
   border-radius: 24px;
   margin: 40px auto;
   max-width: 1100px;
-  color: #E6E6E6; /* Gris claro más visible */
-  font-weight: 700; /* Negrita marcada */
+  color: #E6E6E6; /* Gris claro */
+  font-weight: 700;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
   line-height: 1.6;
 }
