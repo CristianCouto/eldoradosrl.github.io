@@ -31,13 +31,14 @@ body {
   padding: 0;
 }
 
-/* ===== LOGO DE FONDO COMO MARCA DE AGUA ===== */
+/* ===== LOGO DE FONDO A PANTALLA COMPLETA ===== */
 body {
   background-color: #ffffff !important;
   background-image: url("../imagenes/logo.png") !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
-  background-size: 85vh !important;   /* ⬅️ Aumentamos fuerte en base al alto de pantalla */
+  background-size: cover !important; /* ← ahora ocupa TODA la ventana */
+  opacity: 1 !important;
 }
 
 /* ===== Contenedor central ===== */
