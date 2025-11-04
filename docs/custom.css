@@ -134,3 +134,18 @@ body {
   color: var(--blanco);
   position: relative;
 }
+/* ===== LOGO DE FONDO COMO MARCA DE AGUA ===== */
+body {
+  background-color: #ffffff !important;
+  background-image: url("../imagenes/logo.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center 140px !important; /* mueve el logo verticalmente */
+  background-size: 420px !important; /* ajustá tamaño según preferencia */
+  opacity: 1 !important;
+}
+
+/* Para asegurarnos de que el contenido siga siendo totalmente legible */
+.markdown-section {
+  background: rgba(255, 255, 255, 0.92) !important; /* Blanquito transparente */
+  backdrop-filter: blur(4px);
+}
