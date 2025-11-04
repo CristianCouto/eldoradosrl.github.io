@@ -20,9 +20,9 @@ body {
 }
 
 body {
-  background: #ffffff url("https://cristiancouto.github.io/eldoradosrl.github.io/docs/imagenes/logo.png") 
+  background: #ffffff url("https://cristiancouto.github.io/eldoradosrl.github.io/imagenes/logo.png")
               center center no-repeat fixed;
-  background-size: 28%; /* 🔥 Ajusté a tamaño más elegante */
+  background-size: 28%; /* Ajustá entre 20% y 40% según lo quieras */
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
   padding: 0;
