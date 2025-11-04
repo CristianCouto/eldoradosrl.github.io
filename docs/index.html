@@ -3,87 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <title>Portal de Soporte Interno - El Dorado SRL</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
-  <style>
-    :root{
-      --dorado-orange: #F28C28;
-      --dorado-blue: #0074C7;
-      --dorado-gray: #E5E5E5;
-      --dorado-white: #FFFFFF;
-    }
-    body{
-      background: linear-gradient(135deg, var(--dorado-white), var(--dorado-gray));
-      font-family: Arial, sans-serif;
-    }
-    .sidebar{
-      background: rgba(255,255,255,0.78) !important;
-      backdrop-filter: blur(6px);
-      border-right: 1px solid rgba(0,0,0,0.08);
-    }
-    .app-name{
-      color: var(--dorado-blue) !important;
-      font-weight: 700 !important;
-      line-height: 1.2;
-    }
-    .markdown-section{
-      background: rgba(255,255,255,0.86);
-      backdrop-filter: blur(4px);
-      border-radius: 12px;
-      padding: 28px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.12);
-    }
-    h1,h2,h3,h4{ color: #264653; }
-    a{ color: var(--dorado-blue); text-decoration: none; }
-    a:hover{ color: var(--dorado-orange); }
-    .btn,.markdown-section button{
-      background: var(--dorado-orange); color:#fff; border:none;
-      padding:8px 14px; border-radius:10px; cursor:pointer; transition:.2s;
-    }
-    .btn:hover,.markdown-section button:hover{ background: var(--dorado-blue); }
-    /* caja de búsqueda */
-    .search input{
-      background: rgba(255,255,255,0.9); border-radius:10px; border:1px solid #ddd;
-    }
-    /* pie simple */
-    .footer{
-      margin-top: 24px; font-size: 12px; color:#666; text-align:center;
-    }
-  </style>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css" />
 </head>
+
 <body>
   <div id="app"></div>
 
   <script>
-  window.$docsify = {
-    name: 'Portal de Soporte Interno - El Dorado SRL',
-
-    homepage: 'README.md',
-    loadSidebar: '_sidebar.md',
-
-    alias: {
-      '/guia-usuario': 'guia-usuario.md',
-      '/instalacion': 'instalacion.md',
-      '/administrador': 'administrador.md',
-      '/mantenimiento': 'mantenimiento.md',
-      '/preguntas-frecuentes': 'preguntas-frecuentes.md',
-      '.*?/README.md': 'README.md'
-    },
-
-    subMaxLevel: 3,
-    auto2top: true
-  }
-</script>
-
+    window.$docsify = {
+      name: 'Portal de Soporte Interno - El Dorado SRL',
+      homepage: 'README.md',
+      loadSidebar: '_sidebar.md',
+      subMaxLevel: 3,
+      auto2top: true
     }
   </script>
 
-  <!-- Docsify -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <!-- Plugins útiles -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
-
-  <div class="footer">© El Dorado SRL — Uso Interno</div>
 </body>
 </html>
