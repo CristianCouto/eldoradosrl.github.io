@@ -38,7 +38,7 @@ Antes de usar el chatbot, debes iniciar los servicios locales.
      
 ---
 
-## Paso 3: Interacción con el Chatbot
+## Paso 2: Interacción con el Chatbot
    💬 Realizar Consultas
    
 1. En la parte derecha de la pantalla, verás el panel de chat.
