@@ -12,7 +12,9 @@
   Desarrollado por alumnos del <br> Politécnico Malvinas Argentinas
 </p>
 
-<img src="imagenes/poli.png" class="logo-poli">
+<a href="https://politecnico.ar/" target="_blank" rel="noopener noreferrer">
+  <img src="imagenes/poli.png" class="logo-poli">
+</a>
 
 <div class="contactos-dropdown">
   <details>
