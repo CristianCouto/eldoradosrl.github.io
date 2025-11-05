@@ -221,7 +221,7 @@ table td, table th {
 /*Logo Politecnico */
 .logo-poli {
   display: block;
-  width: 180px;       /* Ajusta el tamaño del logo */
+  width: 200px;       /* Ajusta el tamaño del logo */
   margin: 8px auto 14px auto; /* Centrado y separación */
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.6));
   border-radius: 4px; /* Opcional → suaviza bordes */
