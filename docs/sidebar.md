@@ -6,29 +6,29 @@
 - [Mantenimiento y Respaldos](mantenimiento.md)
 - [Preguntas Frecuentes](preguntas-frecuentes.md)
 
-<hr>
+<<hr>
 
 <div class="contactos-dropdown">
   <details>
     <summary class="btn-contactos">Contactos</summary>
 
-  <div class="dropdown-list">
-    <a href="https://www.linkedin.com/in/cristian-couto-147090211/" target="_blank">
-      Cristian Couto
-    </a>
-    <a href="(https://www.linkedin.com/in/santiago-oroz/)" target="_blank">
-      Santiago Oroz
-    </a>
-    <a href="#">
-      Valeria Villegas (pendiente)
-    </a>
-    <a href="[#](https://www.linkedin.com/in/stella-ventura)" target="_blank">
-      Stella Ventura
-    </a>
-    <a href="#">
-      Belén Padrón (pendiente)
-    </a>
-  </div>
+    <div class="dropdown-list">
+      <a href="https://www.linkedin.com/in/cristian-couto-147090211/" target="_blank" rel="noopener noreferrer">
+        Cristian Couto
+      </a>
+      <a href="https://www.linkedin.com/in/santiago-oroz/" target="_blank" rel="noopener noreferrer">
+        Santiago Oroz
+      </a>
+      <a href="#">
+        Valeria Villegas (pendiente)
+      </a>
+      <a href="https://www.linkedin.com/in/stella-ventura/" target="_blank" rel="noopener noreferrer">
+        Stella Ventura
+      </a>
+      <a href="#">
+        Belén Padrón (pendiente)
+      </a>
+    </div>
 
   </details>
 </div>
