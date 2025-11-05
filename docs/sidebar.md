@@ -33,8 +33,8 @@
     <a href="https://www.linkedin.com/in/stella-ventura" target="_blank">
       Stella Ventura
     </a>
-    <a href="#">
-      Belén Padrón (pendiente)
+    <a href="https://www.linkedin.com/in/mariana-bel%C3%A9n-padron-1199711b2/" target="_blank">
+      Belén Padrón
     </a>
   </div>
 
