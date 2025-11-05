@@ -146,3 +146,33 @@ table td, table th {
   font-weight: 800 !important;
   text-decoration: underline;
 }
+
+/* Contenedor para fijar el botón abajo */
+.sidebar-linkedin {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Botón LinkedIn */
+.btn-linkedin {
+  background-color: #0A66C2; /* Azul oficial LinkedIn */
+  color: #ffffff !important;
+  padding: 10px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-linkedin:hover {
+  background-color: #084a91;
+  transform: scale(1.03);
+}
+
