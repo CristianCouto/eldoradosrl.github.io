@@ -11,8 +11,8 @@ El sistema funciona en una PC local con LM Studio + Backend Flask + Frontend Rea
 
 | Componente | Especificación sugerida |
 |---|---|
-| RAM | 32 GB |
-| CPU | Ryzen 7 5700G o similar |
+| RAM | 16 GB |
+| CPU | Ryzen 7 5000 series o similar |
 | GPU | Placa Gráfica dedicada |
 | OS | Windows 10 / 11 |
 
