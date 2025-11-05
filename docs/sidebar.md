@@ -8,31 +8,27 @@
 
 <hr>
 
-<div class="sidebar-linkedin">
+<div class="contactos-dropdown">
+  <details>
+    <summary class="btn-contactos">Contactos</summary>
 
-  <!-- Cristian Couto -->
-  <a href="https://www.linkedin.com/in/cristian-couto-147090211/" target="_blank" class="btn-linkedin">
-    Cristian Couto
-  </a>
+  <div class="dropdown-list">
+    <a href="https://www.linkedin.com/in/cristian-couto-147090211/" target="_blank">
+      Cristian Couto
+    </a>
+    <a href="#">
+      Santiago Oroz (pendiente)
+    </a>
+    <a href="#">
+      Valeria Villegas (pendiente)
+    </a>
+    <a href="#">
+      Stella Ventura (pendiente)
+    </a>
+    <a href="#">
+      Belén Padrón (pendiente)
+    </a>
+  </div>
 
-  <!-- Santiago Oroz (pendiente URL) -->
-  <a href="#" target="_blank" class="btn-linkedin disabled">
-    Santiago Oroz (pendiente)
-  </a>
-
-  <!-- Valeria Villegas (pendiente URL) -->
-  <a href="#" target="_blank" class="btn-linkedin disabled">
-    Valeria Villegas (pendiente)
-  </a>
-
-  <!-- Stella Ventura (pendiente URL) -->
-  <a href="#" target="_blank" class="btn-linkedin disabled">
-    Stella Ventura (pendiente)
-  </a>
-
-  <!-- Belén Padrón (pendiente URL) -->
-  <a href="#" target="_blank" class="btn-linkedin disabled">
-    Belén Padrón (pendiente)
-  </a>
-
+  </details>
 </div>
