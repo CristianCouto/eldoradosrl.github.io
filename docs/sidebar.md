@@ -8,6 +8,10 @@
 
 <hr>
 
+<p class="credito-alumnos">
+  Desarrollado por alumnos del <br> Politécnico Malvinas Argentinas
+</p>
+
 <div class="contactos-dropdown">
   <details>
     <summary class="btn-contactos">Contactos</summary>
