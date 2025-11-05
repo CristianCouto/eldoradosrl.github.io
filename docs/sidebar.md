@@ -23,7 +23,7 @@
       Valeria Villegas (pendiente)
     </a>
     <a href="[#](https://www.linkedin.com/in/stella-ventura)" target="_blank">
-      Stella Ventura (pendiente)
+      Stella Ventura
     </a>
     <a href="#">
       Belén Padrón (pendiente)
