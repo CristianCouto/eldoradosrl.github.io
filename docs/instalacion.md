@@ -71,6 +71,7 @@ El panel de la izquierda ("Gestión de Archivos") permite administrar la informa
      
 2. Administración del Conocimiento:
 
+<img width="549" height="723" alt="image" src="https://github.com/user-attachments/assets/76d72499-26cc-494b-b06c-cb020317ddd7" />
 
 
 
