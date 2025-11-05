@@ -19,8 +19,8 @@
     <a href="https://www.linkedin.com/in/santiago-oroz/" target="_blank">
       Santiago Oroz
     </a>
-    <a href="#">
-      Valeria Villegas (pendiente)
+    <a href="https://www.linkedin.com/in/valeria-s-villegas/ target="_blank">
+      Valeria Villegas
     </a>
     <a href="https://www.linkedin.com/in/stella-ventura" target="_blank">
       Stella Ventura
