@@ -12,6 +12,8 @@
   Desarrollado por alumnos del <br> Politécnico Malvinas Argentinas
 </p>
 
+<img src="imagenes/poli.png" class="logo-poli">
+
 <div class="contactos-dropdown">
   <details>
     <summary class="btn-contactos">Contactos</summary>
