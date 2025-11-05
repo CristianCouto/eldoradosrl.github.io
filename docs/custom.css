@@ -218,4 +218,12 @@ table td, table th {
   line-height: 1.3;
   text-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
+/*Logo Politecnico */
+.logo-poli {
+  display: block;
+  width: 140px;       /* Ajusta el tamaño del logo */
+  margin: 8px auto 14px auto; /* Centrado y separación */
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.6));
+  border-radius: 4px; /* Opcional → suaviza bordes */
+}
 
