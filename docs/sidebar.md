@@ -16,13 +16,13 @@
     <a href="https://www.linkedin.com/in/cristian-couto-147090211/" target="_blank">
       Cristian Couto
     </a>
-    <a href="#">
-      Santiago Oroz (pendiente)
+    <a href="(https://www.linkedin.com/in/santiago-oroz/)" target="_blank">
+      Santiago Oroz
     </a>
     <a href="#">
       Valeria Villegas (pendiente)
     </a>
-    <a href="#">
+    <a href="[#](https://www.linkedin.com/in/stella-ventura)" target="_blank">
       Stella Ventura (pendiente)
     </a>
     <a href="#">
