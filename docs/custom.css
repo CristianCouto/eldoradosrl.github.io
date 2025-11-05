@@ -147,37 +147,54 @@ table td, table th {
   text-decoration: underline;
 }
 
-.sidebar-linkedin {
+/* Contenedor abajo */
+.contactos-dropdown {
   position: absolute;
   bottom: 20px;
   left: 20px;
   right: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 }
 
-/* Botón activo */
-.btn-linkedin {
-  background-color: #0A66C2;
-  color: #ffffff !important;
+/* Botón principal */
+.btn-contactos {
+  background-color: #0A66C2; /* Azul LinkedIn */
+  color: #fff !important;
   padding: 10px 14px;
   border-radius: 6px;
-  text-decoration: none;
   font-weight: 600;
+  list-style: none;
+  cursor: pointer;
   text-align: center;
-  transition: 0.2s ease-in-out;
+  transition: 0.2s;
 }
 
-.btn-linkedin:hover {
+.btn-contactos:hover {
   background-color: #084a91;
   transform: scale(1.03);
 }
 
-/* Botones sin link (desactivados) */
-.btn-linkedin.disabled {
-  background-color: #9ca3af;
-  pointer-events: none;
-  opacity: 0.6;
+/* Lista desplegada */
+.dropdown-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  gap: 6px;
+}
+
+/* Estilo de enlaces internos */
+.dropdown-list a {
+  text-decoration: none;
+  color: #0A66C2;
+  background: #ffffff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  border: 1px solid #d1d5db;
+  transition: 0.2s;
+}
+
+.dropdown-list a:hover {
+  background-color: #eaf3ff;
+  border-color: #0A66C2;
 }
 
