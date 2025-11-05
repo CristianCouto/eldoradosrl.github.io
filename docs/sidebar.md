@@ -1,4 +1,4 @@
-**Documentación**
+<p><strong>Documentación</strong></p>
 
 - [Guía de Usuario](guia-usuario.md)
 - [Instalación del Sistema](instalacion.md)
