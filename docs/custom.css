@@ -198,3 +198,13 @@ table td, table th {
   border-color: #0A66C2;
 }
 
+/* Solo el título "Documentación" del sidebar */
+.sidebar > p > strong {
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  font-size: 17px !important;
+  display: block;
+  margin-bottom: 6px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
