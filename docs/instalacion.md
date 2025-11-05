@@ -1,4 +1,7 @@
-# Instalación del Sistema
+# Instalación del Sistema 🤖 Chatbot RAG para El Dorado SRL
+
+Este instructivo te guiará en el uso del chatbot RAG (Generación Aumentada por Recuperación) desarrollado en tus prácticas. 
+El chatbot te permitirá consultar información de la Wiki y de documentos PDF, utilizando un modelo de lenguaje grande (LLM) que se ejecuta localmente.
 
 El sistema funciona en una PC local con LM Studio + Backend Flask + Frontend React.
 
