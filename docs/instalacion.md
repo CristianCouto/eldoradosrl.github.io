@@ -152,24 +152,15 @@ Esto iniciará ambos servicios y abrirá automáticamente la página web del cha
 >
 > 1.  **Terminal 1 (Backend):**
 >     ```bash
+>     python app.py
 >     ```
-
-  * python app.py
-
-> ````
-> ```
-> ````
+> 
 >
 > 2.  **Terminal 2 (Frontend):**
 >     ```bash
+>     cd frontend
+>     npm start
 >     ```
-
-  * cd frontend
-  * npm start
-
-> ````
-> ```
-> ````
 
 -----
 
