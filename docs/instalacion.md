@@ -147,20 +147,20 @@ Hemos incluido scripts para facilitar el inicio simultáneo del backend (Flask) 
 
 Esto iniciará ambos servicios y abrirá automáticamente la página web del chatbot (`http://localhost:3000`) en tu navegador.
 
- **Método Alternativo (Manual):**
- Si los scripts fallan, puedes iniciar los servicios manualmente en dos terminales separadas (ambas en la raíz del proyecto y con `venv` activado):
+**Método Alternativo (Manual):**
+Si los scripts fallan, puedes iniciar los servicios manualmente en dos terminales separadas (ambas en la raíz del proyecto y con `venv` activado):
 
- 1.  **Terminal 1 (Backend):**
+1.  **Terminal 1 (Backend):**
       ```bash
       python app.py
       ```
  
 
- 2.  **Terminal 2 (Frontend):**
-     ```bash
-     cd frontend
-     npm start
-     ```
+2.  **Terminal 2 (Frontend):**
+      ```bash
+      cd frontend
+      npm start
+      ```
 
 -----
 
