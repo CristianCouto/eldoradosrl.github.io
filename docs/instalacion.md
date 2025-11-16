@@ -151,16 +151,16 @@ Esto iniciará ambos servicios y abrirá automáticamente la página web del cha
 Si los scripts fallan, puedes iniciar los servicios manualmente en dos terminales separadas (ambas en la raíz del proyecto y con `venv` activado):
 
 1.  **Terminal 1 (Backend):**
-      ```bash
-      python app.py
-      ```
+   ```bash
+   python app.py
+   ```
  
 
 2.  **Terminal 2 (Frontend):**
-      ```bash
-      cd frontend
-      npm start
-      ```
+   ```bash
+   cd frontend
+   npm start
+   ```
 
 -----
 
