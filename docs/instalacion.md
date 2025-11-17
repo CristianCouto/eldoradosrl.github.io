@@ -37,7 +37,7 @@ El sistema funciona en una PC local con LM Studio + Backend Flask + Frontend Rea
         # Modelo a usar en LM Studio (asegúrate que coincida)
         LLM_MODEL_NAME="Meta-Llama-3-8B-Instruct"
         ```
-    * **¡Importante!** Nota que el nombre en el `.env` (línea 22) **no** incluye el sufijo `-GGUF`. El script está configurado para usar el string `Meta-Llama-3-8B-Instruct`.
+    * **¡Importante!** Nota que el nombre en el `.env` (línea 23) **no** incluye el sufijo `-GGUF`. El script está configurado para usar el string `Meta-Llama-3-8B-Instruct`.
 
 #### Opcional: Cambiar de Modelo
 
@@ -46,7 +46,7 @@ Puedes optar por usar un modelo diferente al recomendado.
 * **Modelos más potentes (ej. 70B):** Darán respuestas más precisas y coherentes, pero requerirán una GPU muy potente y mucha RAM, y serán más lentos.
 * **Modelos más pequeños (ej. 3B):** Serán mucho más rápidos y consumirán menos recursos, pero la calidad de la respuesta puede ser inferior.
 
-Si descargas un modelo diferente, **debes actualizar la línea 22** del archivo `.env` para que el valor `LLM_MODEL_NAME` coincida **exactamente** con el "Model Name" que LM Studio espera.
+Si descargas un modelo diferente, **debes actualizar la línea 23** del archivo `.env` para que el valor `LLM_MODEL_NAME` coincida **exactamente** con el "Model Name" que LM Studio espera.
 
 ---
 
@@ -82,6 +82,15 @@ En la raíz del proyecto, crea un entorno virtual e instala las dependencias de 
 
     ```bash
     pip install -r requirements.txt
+    ```
+4.  Rellenar credenciales de la wiki en el .env, opcional para integrar la wiki:
+
+    ```bash
+    # Credenciales de la Wiki de El Dorado
+    WIKI_BASE_URL="https://objetivos.eldoradosrl.ar/wiki"
+    # Requerido para integrar la wiki. Rellenar credenciales
+    WIKI_USERNAME=""
+    WIKI_PASSWORD=""
     ```
 
 ### Paso 1.3: Configuración del Frontend
